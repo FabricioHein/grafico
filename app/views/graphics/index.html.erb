@@ -1,0 +1,16 @@
+<h1>Graphics</h1>
+​
+<% series = [
+  {name: "Male", data: @male_user},
+  {name: "Female", data: @female_user}
+] %>
+​
+<% options = {
+  title: 'Users Growth',
+  subtitle: 'Grouped Per Week',
+  xtitle: 'Week',
+  ytitle: 'Users',
+  stacked: true
+} %>
+​
+<%= line_chart(series, options) %>
